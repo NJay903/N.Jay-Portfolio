@@ -1,0 +1,548 @@
+/* ========================================
+   N.JayXAI - VIDEO WORKS
+======================================== */
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #101014;
+    color: #FFFFFF;
+    font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+button {
+    font: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid #D84A63;
+    outline-offset: 4px;
+}
+
+/* ========================================
+   COMMON CONTAINER
+======================================== */
+
+.video-container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.section-number {
+    color: #D84A63;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+/* ========================================
+   SECTION 01 - VIDEO INTRO
+======================================== */
+
+.video-intro {
+    padding: 115px 0 100px;
+    text-align: center;
+    background: #101014;
+}
+
+.video-intro .section-number {
+    margin-bottom: 25px;
+}
+
+.video-intro h1 {
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.video-intro-description {
+    color: #B8B8C0;
+    font-size: 17px;
+    line-height: 2;
+    word-break: keep-all;
+}
+
+/* ========================================
+   SECTION 02 - PROJECT GALLERY
+======================================== */
+
+.video-gallery {
+    padding: 90px 0 150px;
+    background: #16151B;
+}
+
+.gallery-heading {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.gallery-heading .section-number {
+    margin-bottom: 18px;
+}
+
+.gallery-heading h2 {
+    margin-bottom: 18px;
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.gallery-heading > p:last-child {
+    color: #AFAFB8;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* 5 COLUMNS x 2 ROWS */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 28px 18px;
+    align-items: stretch;
+}
+
+/* ========================================
+   PROJECT CARD
+======================================== */
+
+.project-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #211F27;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(216, 74, 99, 0.55);
+}
+
+/* VIDEO THUMBNAIL */
+
+.project-video {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border: none;
+    background: #111116;
+    cursor: pointer;
+}
+
+.project-video img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.project-video:hover img {
+    transform: scale(1.05);
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    padding-left: 3px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    color: #FFFFFF;
+    font-size: 19px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.project-video:hover .play-icon {
+    background: #D84A63;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* CARD CONTENT */
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 18px 14px 22px;
+}
+
+.project-number {
+    margin-bottom: 10px;
+    color: #D84A63;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.project-content h3 {
+    min-height: 40px;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+    overflow-wrap: anywhere;
+}
+
+/* PRODUCTION PROCESS IMAGE */
+
+.project-process {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    margin-bottom: 18px;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    background: #141318;
+    cursor: zoom-in;
+}
+
+.project-process img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.project-process:hover img {
+    transform: scale(1.04);
+}
+
+/* PLANNING DESCRIPTION */
+
+.project-description {
+    color: #C0BEC7;
+    font-size: 12px;
+    line-height: 1.9;
+    word-break: keep-all;
+}
+
+/* ========================================
+   COMMON MODAL
+======================================== */
+
+.video-modal,
+.image-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.video-modal.active,
+.image-modal.active {
+    display: flex;
+}
+
+.modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.84);
+}
+
+.modal-close {
+    position: absolute;
+    top: -42px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #FFFFFF;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: #D84A63;
+}
+
+/* ========================================
+   VIDEO POPUP
+======================================== */
+
+.video-modal-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1000px;
+    background: #08080B;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.6);
+}
+
+.video-player {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.video-player iframe {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ========================================
+   IMAGE POPUP
+======================================== */
+
+.image-modal-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    max-width: min(900px, 70vw);
+    max-height: 85vh;
+    padding: 12px;
+    background: #15151A;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.6);
+}
+
+.image-viewer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-height: 75vh;
+    overflow: hidden;
+    background: #0B0B0F;
+    cursor: grab;
+    touch-action: none;
+}
+
+.image-viewer:active {
+    cursor: grabbing;
+}
+
+.image-viewer img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 72vh;
+    object-fit: contain;
+    transform-origin: center center;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.image-zoom-guide {
+    margin-top: 12px;
+    color: #A6A6B0;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.site-footer {
+    padding: 35px 20px;
+    background: #101014;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+}
+
+.site-footer p {
+    color: #85858F;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1100px) {
+    .video-container {
+        padding: 0 24px;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px 18px;
+    }
+
+    .image-modal-content {
+        max-width: 85vw;
+    }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+    .site-header {
+        min-height: 70px;
+    }
+
+    .site-logo {
+        font-size: 23px;
+    }
+
+    .site-nav {
+        gap: 12px;
+    }
+
+    .site-nav a {
+        font-size: 10px;
+    }
+
+    .video-container {
+        padding: 0 16px;
+    }
+
+    .video-intro {
+        padding: 80px 0 65px;
+    }
+
+    .video-intro h1 {
+        font-size: 40px;
+    }
+
+    .video-intro-description {
+        font-size: 14px;
+    }
+
+    .video-gallery {
+        padding: 65px 0 100px;
+    }
+
+    .gallery-heading h2 {
+        font-size: 27px;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px 10px;
+    }
+
+    .project-content {
+        padding: 13px 10px 16px;
+    }
+
+    .project-content h3 {
+        min-height: 34px;
+        font-size: 13px;
+    }
+
+    .project-description {
+        font-size: 11px;
+    }
+
+    .play-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 15px;
+    }
+
+    .image-modal-content {
+        max-width: 94vw;
+        max-height: 80vh;
+    }
+
+    .image-viewer {
+        max-height: 68vh;
+    }
+
+    .image-viewer img {
+        max-height: 65vh;
+    }
+
+    .image-zoom-guide {
+        font-size: 10px;
+    }
+}
+.project-video-frame {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #000;
+}
+
+.project-video-frame iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}.video-modal,
+.image-modal {
+    display: none;
+}
+
+.video-modal.active,
+.image-modal.active {
+    display: flex;
+}
+
+.image-viewer {
+    overflow: hidden;
+    touch-action: none;
+}
+
+.image-viewer img {
+    user-select: none;
+    -webkit-user-drag: none;
+}

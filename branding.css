@@ -1,0 +1,268 @@
+/* ==========================================
+   BRANDING PAGE
+========================================== */
+
+.branding-page {
+    width: 100%;
+    background: #080808;
+    color: #FFFFFF;
+}
+
+.branding-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+/* ==========================================
+   SECTION 01 - BRAND IDENTITY
+========================================== */
+
+.brand-identity {
+    display: flex;
+    align-items: center;
+    min-height: 780px;
+    padding: 100px 0;
+    background: radial-gradient(ellipse at 50% 45%, #25202B 0%, #111116 48%, #050505 100%);
+}
+
+.branding-section-number {
+    margin-bottom: 65px;
+    color: #BBBBBB;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.brand-identity-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.brand-name {
+    margin: 0 0 35px;
+    color: #FFFFFF;
+    font-size: 88px;
+    font-weight: 800;
+    letter-spacing: -3px;
+}
+
+.brand-name span {
+    color: #D92332;
+}
+
+.brand-message {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+.brand-divider {
+    width: 65px;
+    height: 2px;
+    margin: 35px 0;
+    background: #D92332;
+}
+
+.brand-direction {
+    margin: 0;
+    color: #D5D5D5;
+    font-size: 19px;
+    line-height: 2;
+    word-break: keep-all;
+}
+.brand-logo {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    mix-blend-mode: screen;
+}
+
+/* SECTION 02 : BRAND STORY */
+
+.brand-story {
+    padding: 120px 0;
+    background: linear-gradient(135deg, #111116 0%, #1B1822 55%, #101015 100%);
+}
+
+.brand-story-heading {
+    max-width: 950px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.brand-story-number {
+    margin-bottom: 25px;
+    color: #C5A7AD;
+    font-size: 15px;
+    letter-spacing: 4px;
+}
+
+.brand-story-heading h2 {
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.brand-story-description {
+    color: #CCCCCC;
+    font-size: 17px;
+    line-height: 2;
+    word-break: keep-all;
+}
+
+.brand-film {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.brand-film-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #000000;
+    border: 1px solid #39343E;
+}
+
+.brand-film-video video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.brand-film-placeholder {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.brand-film-placeholder span {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.brand-film-placeholder p {
+    color: #AAAAAA;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.brand-film-caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-top: 22px;
+}
+
+.brand-film-caption span {
+    color: #E0B9BE;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.brand-film-caption p {
+    color: #AAAAAA;
+    font-size: 13px;
+}
+.brand-origin {
+    max-width: 780px;
+    margin: 80px auto 0;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: left;
+}
+
+.brand-origin h3 {
+    margin-bottom: 20px;
+    color: #D43A50;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.brand-origin h4 {
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.brand-origin p {
+    margin-bottom: 22px;
+    color: #CCCCCC;
+    font-size: 16px;
+    line-height: 2;
+    word-break: keep-all;
+}.brand-film-production {
+    max-width: 1000px;
+    margin: 70px auto 0;
+    padding-top: 45px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.film-production-label {
+    margin-bottom: 20px;
+    color: #D43A50;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.brand-film-production h3 {
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.brand-film-production > p:not(.film-production-label) {
+    margin-bottom: 22px;
+    color: #CCCCCC;
+    font-size: 16px;
+    line-height: 2;
+    word-break: keep-all;
+}
+
+.film-production-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 35px;
+}
+
+.film-production-tools span {
+    padding: 10px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #DDDDDD;
+    font-size: 12px;
+    letter-spacing: 1px;
+}

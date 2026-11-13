@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DESIGN WORKS | N.Jay X AI</title>
+<link rel="stylesheet" href="design-works.css">
+<link rel="stylesheet" href="header.css">
+<script src="design-works.js" defer></script>
+<script src="security.js" defer></script>
+</head>
+<body>  
+<!-- HEADER -->
+<header class="site-header">
+    <div class="header-container">
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+            <img src="01_Profile/logo.png" alt="N.Jay X AI 로고">
+        </a>
+
+        <!-- NAVIGATION -->
+        <nav class="main-nav" aria-label="메인 메뉴">
+            <ul>
+                <li><a href="index.html">MAIN</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="branding.html">BRANDING</a></li>
+                <li><a href="video-works.html">VIDEO WORKS</a></li>
+                <li><a href="design-works.html" class="active" aria-current="page">DESIGN WORKS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+    <main>
+        <section class="design-intro">
+            <p class="section-label">N.JAY X AI / CREATIVE WORLD</p>
+            <h1>AI DESIGN WORKS</h1>
+            <p>AI 기술의 활용을 영상 제작에만 국한하지 않고, 이미지 제작과 디자인 분야까지 확장하였습니다.</p>
+        </section>
+
+        <section class="detail-section">
+            <div class="section-heading">
+                <span>SECTION 01</span>
+                <h2>PRODUCT DETAIL PAGES</h2>
+                <p>각 영상 프로젝트의 콘셉트와 기획 의도를 바탕으로, AI 기술을 활용하여 가상의 제품 상세페이지를 제작하였습니다.</p>
+            </div>
+
+            <div class="detail-grid" id="detailGrid"></div>
+        </section>
+        
+        <!-- SECTION 02 : PROMOTIONAL IMAGES -->
+        <section class="detail-section creative-section">
+            <div class="section-heading">
+                <span>SECTION 02</span>
+                <h2>PROMOTIONAL IMAGES</h2>
+                <p>각 영상 프로젝트의 콘셉트와 분위기를 바탕으로 AI 기술을 활용하여 다양한 홍보 이미지를 제작하였습니다.</p>
+            </div>
+
+            <div class="detail-grid" id="promoGrid"></div>
+        </section>
+
+        <!-- SECTION 03 : AI CREATIVE DESIGN -->
+        <section class="detail-section creative-section">
+            <div class="section-heading">
+                <span>SECTION 03</span>
+                <h2>AI CREATIVE DESIGN</h2>
+                <p>N.Jay 프로젝트를 진행하며 얻은 영감을 바탕으로 AI 기술과 포토샵을 활용하여 캐릭터, 아이콘 및 로고 이미지를 제작하였습니다. 또한 포토샵을 활용한 목업 작업을 통해 다양한 디자인 결과물로 발전시켰습니다.</p>
+            </div>
+
+            <div class="detail-grid" id="creativeGrid"></div>
+        </section>
+
+    </main>
+
+    <div class="image-modal" id="imageModal" aria-hidden="true">
+        <button class="modal-close" id="modalClose" aria-label="닫기">×</button>
+
+        <div class="modal-toolbar">
+            <button id="zoomOut" aria-label="축소">−</button>
+            <span id="zoomValue">100%</span>
+            <button id="zoomIn" aria-label="확대">+</button>
+            <button id="zoomReset">맞춤</button>
+        </div>
+
+        <div class="modal-viewport" id="modalViewport">
+            <img id="modalImage" alt="상세페이지 원본">
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>© 2026 N.Jay X AI. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
